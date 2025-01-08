@@ -3,7 +3,8 @@ import os
 import pandas as pd
 import sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'apps'))
+#sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'apps'))
+base_dir = os.path.dirname(os.path.abspath(__file__))
 from data import load_ireland_data, load_uk_data
 
 def app():
