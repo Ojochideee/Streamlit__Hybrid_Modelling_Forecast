@@ -6,4 +6,4 @@ streamlit-pandas-profiling
 Jinja2
 setuptools
 tensorflow
-sklearn
+scikit-learn
