@@ -9,7 +9,7 @@ from data import load_ireland_data, load_uk_data
 def app():
     # Header with icon
     col1, col2 = st.columns([1, 3])
-    icon_path = "/Users/blueaivee/Desktop/Streamlit_hybrid_devop/Datasets/graph_icon.png"
+    icon_path = os.path.join(base_dir, '../Datasets/graph_icon.png')
 
     with col1:
         if os.path.exists(icon_path):
