@@ -270,7 +270,7 @@ def app():
     # Create the plot for Model Predictions vs Actual Values
 
     st.header('Model Predictions vs Actual Values')
-    fig, ax = plt.subplots(figsize=(12, 6))
+    fig, ax = plt.subplots(figsize=(10, 5))
     ax.plot(y_test_trimmed, label='Actual Values', color='blue', linewidth=2)
     ax.plot(sarimax_test_preds_trimmed, label='SARIMAX Predictions', color='green', linestyle='--', linewidth=2)
     ax.plot(lstm_test_preds_trimmed, label='LSTM Predictions', color='red', linestyle='-.', linewidth=2)
@@ -319,7 +319,7 @@ def app():
     # Historical plot data
     y_test_trimmed = y_test_sarimax[-len(hybrid_test_preds):].to_numpy()
 
-    fig, ax = plt.subplots(figsize=(12, 6))
+    fig, ax = plt.subplots(figsize=(10, 5))
     ax.plot(y_test_trimmed, label='Actual Values', color='blue', linewidth=2)
     ax.plot(sarimax_test_preds_trimmed, label='SARIMAX Predictions', color='green', linestyle='--', linewidth=2)
     ax.plot(lstm_test_preds_trimmed, label='LSTM Predictions', color='red', linestyle='-.', linewidth=2)
